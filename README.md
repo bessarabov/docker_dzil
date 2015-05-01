@@ -6,4 +6,5 @@
 
 ## Use image
 
-    docker run -it -v /Users/bessarabov/Dropbox/git/App-IsGitSynced:/data dzil
+    cd My-Perl-Module-Directory
+    docker run -it -v `pwd`:/data dzil
