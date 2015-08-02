@@ -7,4 +7,4 @@
 ## Use image
 
     cd My-Perl-Module-Directory
-    docker run --rm -it -v `pwd`:/data bash
+    docker run --rm -it -v `pwd`:/data dzil bash
