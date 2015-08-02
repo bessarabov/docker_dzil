@@ -15,11 +15,12 @@ RUN curl -L http://cpanmin.us | perl - App::cpanminus
 
 RUN cpanm CPAN::Meta::Check
 RUN cpanm Moose::Role
+RUN cpanm Test::Pod::Coverage
+RUN cpanm Test::Pod
+RUN cpanm --notest Term::ReadKey
 RUN cpanm Dist::Zilla
 RUN cpanm --notest Dist::Zilla::Plugin::Git::ExcludeUntracked
 RUN cpanm Dist::Zilla::PluginBundle::BESSARABV
-RUN cpanm Test::Pod::Coverage
-RUN cpanm Test::Pod
 
 RUN mkdir /data
 
