@@ -19,6 +19,7 @@ RUN cpanm Test::Pod::Coverage
 RUN cpanm Test::Pod
 RUN cpanm --notest Term::ReadKey
 RUN cpanm Dist::Zilla
+RUN cpanm --notest Dist::Zilla::Plugin::CheckChangesHasContent
 RUN cpanm --notest Dist::Zilla::Plugin::Git::ExcludeUntracked
 RUN cpanm Dist::Zilla::PluginBundle::BESSARABV
 

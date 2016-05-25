@@ -2,7 +2,7 @@
 
 ## Build image
 
-    docker build --tag dzil .
+    ./build
 
 ## Use image
 
